@@ -1,5 +1,7 @@
 'use client';
 
+import { State } from '@/app/lib/types';
+
 import { CustomerField, InvoiceForm } from '@/app/lib/definitions';
 import {
   CheckIcon,
