@@ -1,3 +1,3 @@
 export default function Page() {
-    return <p>Nurse Page</p>;
+    return <p>Others Page</p>;
   }
