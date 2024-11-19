@@ -32,7 +32,7 @@ export type State = {
   };
   message?: string | null;
 };
- 
+
 export async function createInvoice(prevState: State, formData: FormData) {
   // Validate form using Zod
   const validatedFields = CreateInvoice.safeParse({
@@ -116,9 +116,9 @@ export async function deleteInvoice(id: string) {
     } catch (error) {
       return { message: 'Database Error: Failed to Delete Invoice.' };
     }
-  }
+}
 
-  export async function authenticate(
+export async function authenticate(
     prevState: string | undefined,
     formData: FormData,
   ) {
@@ -135,8 +135,7 @@ export async function deleteInvoice(id: string) {
       }
       throw error;
     }
-  }
-
+}
 
 function cartch(error: any) {
   throw new Error('Function not implemented.');
